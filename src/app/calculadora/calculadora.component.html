@@ -1,0 +1,51 @@
+<h1 class="bg-dark text-white text-center">{{Titulo}}</h1>
+
+<div class="container p-3  bg-dark text-white  ">
+
+
+  <label >Operador 1:</label>
+  <input type="number" class="form-control" [(ngModel)]="Num1">
+  {{Num1}}
+
+
+</div>
+
+<div class="container p-3 my-3 bg-dark text-white ">
+  <label> Operador 2:</label>
+  <input type="number" class="form-control" [(ngModel)]="Num2">
+  {{Num2}}
+
+
+</div>
+
+<div class="col  text-center">
+<button type="submit" class="btn  btn-success  "(click)="Sumar()" > Suma</button>
+</div>
+
+<div class="row text-center">
+    <p>Resultado: {{sum}} </p>
+
+</div>
+
+
+<div class="container">
+   <h1>Calculadora</h1>
+
+   <form class="bg-dark p-3 text-white">
+    <div class="form-group">
+      <label >Operador A: </label>
+      <input type="number" class="form-control"  [(ngModel)]="operando1" name="operando1" >
+      {{operando1}}
+    </div>
+    <div class="form-group">
+      <label >Operador B: </label>
+      <input type="number" class="form-control"  [(ngModel)]="operando2" name="operando2">
+      {{operando2}}
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="Sumax()">suma</button>
+   </form>
+   <p>Resultado: {{suma}}</p>
+
+</div>
+
+<app-table></app-table>
